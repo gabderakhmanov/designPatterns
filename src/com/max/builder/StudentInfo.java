@@ -5,9 +5,9 @@ public class StudentInfo {
     private final String firstName;
     private final String lastName;
 
-    public StudentInfo(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public StudentInfo(StudentInfoBuilder builder){
+        this.firstName = builder.getFirstName();
+        this.lastName = builder.getLastName();
     }
 
     public String getFirstName() {

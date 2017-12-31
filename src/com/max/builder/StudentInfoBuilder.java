@@ -23,7 +23,7 @@ public class StudentInfoBuilder {
         return lastName;
     }
 
-    public StudentInfo2 build(){
-        return new StudentInfo2(this);
+    public StudentInfo build(){
+        return new StudentInfo(this);
     }
 }
