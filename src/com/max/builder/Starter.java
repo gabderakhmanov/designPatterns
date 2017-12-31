@@ -4,10 +4,11 @@ public class Starter {
 
     public static void main(String[] args){
 
-        StudentInfo studentInfo = new StudentInfo("Max", "Gee");
+        StudentInfoBuilder builder = new StudentInfoBuilder();
+        builder.setFirstName("Max");
+        builder.setLastName("Gee");
 
-
-        System.out.println(studentInfo.getFirstName() + studentInfo.getLastName());
+        System.out.println(builder.getFirstName() + builder.getLastName());
 
 
     }
