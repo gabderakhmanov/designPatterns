@@ -5,12 +5,9 @@ public class Starter {
     public static void main(String[] args){
 
         StudentInfoBuilder builder = new StudentInfoBuilder();
-        builder.setFirstName("Max");
-        builder.setLastName("Gee");
+        StudentInfo2 stInfo = builder.firstName("Max").lastName("Gee2212").build();
 
-        System.out.println(builder.getFirstName() + builder.getLastName());
-
-
+        System.out.println(stInfo.getFirstName() + stInfo.getLastName());
     }
 
 }

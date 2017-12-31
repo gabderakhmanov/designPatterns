@@ -5,12 +5,14 @@ public class StudentInfoBuilder {
     public String firstName;
     public String lastName;
 
-    public void setFirstName(String firstName){
+    public StudentInfoBuilder firstName(String firstName){
         this.firstName = firstName;
+        return this;
     }
 
-    public void setLastName(String lastName){
+    public StudentInfoBuilder lastName(String lastName){
         this.lastName = lastName;
+        return this;
     }
 
     public String getFirstName(){
@@ -21,4 +23,7 @@ public class StudentInfoBuilder {
         return lastName;
     }
 
+    public StudentInfo2 build(){
+        return new StudentInfo2(this);
+    }
 }
